@@ -156,8 +156,6 @@ def print_record(data, detail, f):
     [RuntimeError] 実行時に何らかのエラーが発生した場合。
     """
     try:
-        print(type(detail), type(f))
-
         msg = u''
         pattern = re.compile(r'[\t\r\n]+')
 
