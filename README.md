@@ -18,12 +18,17 @@ dオプションでsite_id及びcorner_idを指定すると、詳細情報をstd
 1. file_title
 1. file_name
 
-## EXAMPLE
+## SYNOPSIS
+```
+nhk_radio_ondemand.py [-h] [-d SITEID_CORNERID]
+```
 
+## EXAMPLE
 ```
 # site_idが2295の番組の、corner_idが17の最新のfile_nameを取得する。
 $ nhk_radio_ondemand.py -d 2295_17 | head -n 1 | cut -f 13
 https://xxxxxxxxxxxxx.m3u8
 ```
 
-Last update 2018/03/03
+## SEE ALSO
+[nhk_radio_ondemand_for_timemanager](https://github.com/ll0s0ll/nhk_radio_ondemand_for_timemanager)
